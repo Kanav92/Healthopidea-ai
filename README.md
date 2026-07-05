@@ -7,6 +7,45 @@ A full-stack medical Q&A platform combining RAG-based AI chat with a community p
 
 ## Features
 
+                    Browser
+
+                       │
+
+               Next.js Frontend
+
+        ┌──────────────┴──────────────┐
+
+        │                             │
+
+ Community Platform             AI Chat
+
+        │                             │
+
+ MongoDB CRUD                 FastAPI
+
+                                      │
+
+                                LangChain
+
+                                      │
+
+                                  Retriever
+
+                                      │
+
+                                   FAISS
+
+                                      │
+
+                             Groq Llama 3.3
+
+                                      │
+
+                           Streaming Response
+
+
+
+                           
 ### AI Medical Assistant
 - **RAG-based Q&A** — answers grounded in a real medical reference (Gale Encyclopedia of Medicine), not just raw LLM knowledge
 - **Streaming responses** — token-by-token streaming via FastAPI `StreamingResponse` + Next.js `ReadableStream`
